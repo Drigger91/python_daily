@@ -1,6 +1,10 @@
 import math
 class Point:
-    def __init__(self, x, y) -> None:
+    # this is wrong
+    # def __init__(self) -> None:
+    #     self.x = 0;
+    #     self.y = 0;
+    def __init__(self, x = 0, y = 0) -> None:
         self.x = x;
         self.y = y;
     def print(self):
@@ -27,3 +31,7 @@ try :
     p.get_distance("");
 except TypeError:
     print("Please pass a valid pointer")
+
+origin = Point();
+
+print(f"{origin.x} {origin.y}")
